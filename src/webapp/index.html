@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+  <title>Web app</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"></link>
+
+  <link rel="stylesheet" href="css/main.css"></link>
+
+</head>
+  <body>
+    <header ng-include="'html/header.html'" ng-controller="appctrl"></header>
+    <div class="content">
+    <div ng-include src="'html/content.html'" ng-controller="appctrl"></div>
+  </div>
+  <footer ng-include="'html/footer.html'"></div>
+
+  </body>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/custom/controller.js"></script>
+</html>
